@@ -1,0 +1,40 @@
+
+/* connections */
+
+---- Display ----
+	The display should be powered from an external power source and the pins connected as follows.
+
+	display_reset_pin CONTROLLINO_D8
+	display_tx0	CONTROLLINO_RX2
+	display_rx0	CONTROLLINO_TX2
+
+	Note: The GND from the display MUST be connected to the GND of the controllino.
+
+---- Temperature sensors ----
+	Each individual temperature sensor should be connected to the corresponding pin.
+
+	tc1_pin   CONTROLLINO_D0
+	tc2_pin   CONTROLLINO_D1
+	tc3_pin   CONTROLLINO_D2
+	tc4_pin   CONTROLLINO_D3
+	tc5_pin   CONTROLLINO_D4
+	tc6_pin   CONTROLLINO_D5
+
+
+---- CO2 and O2 Sensors ----
+	Connect the co2 and o2 sensors straight to the analog pins.
+
+	co2_pin   CONTROLLINO_A0
+	o2_pin    CONTROLLINO_A1
+
+
+---- SD Card ----
+	CONTROLLINO_PIN_HEADER_SS    
+	CONTROLLINO_PIN_HEADER_MOSI    
+	CONTROLLINO_PIN_HEADER_MISO   
+	CONTROLLINO_PIN_HEADER_SCK 
+
+	Note: the SD card should not be more than 8GB in size.
+
+
+/* Startup */
